@@ -51,9 +51,9 @@ bool send_sql(char* sql)
 
 int main()
 {
-	char* sql;
+	char sql[100];
 	puts("SQL Statement eingeben:");
-	scanf("%s", &sql);
+	fgets(sql, 100, stdin);
 	//sql = "SELECT * FROM Mannschaft";
 	send_sql(sql);
 	return 0;
